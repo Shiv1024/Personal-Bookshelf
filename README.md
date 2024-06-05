@@ -1,22 +1,20 @@
-Bookshelf Web Application
-Welcome to the Bookshelf web application! This project allows users to search for books and add them to their personal bookshelf.
-Table of Contents
-.Features
-.Installation
-.Usage
-.Technologies Used
-.Contributing
-.License
-Features
-.Search for books by name using the Open Library API.
-.Add books to your personal bookshelf.
-.View your personal bookshelf and remove books as needed.
-.Responsive design for a seamless experience across devices.
-Technologies Used
-.React.js
-.React Router
-.Tailwind CSS
-.Open Library API
+#Bookshelf Web Application
+##Welcome to the Bookshelf web application! This project allows users to search for books and add them to their personal bookshelf.
+##Table of Contents
+###Features
+###Installation
+###Usage
+###Technologies Used
+##Features
+###Search for books by name using the Open Library API.
+###Add books to your personal bookshelf.
+###View your personal bookshelf and remove books as needed.
+###Responsive design for a seamless experience across devices.
+##Technologies Used
+###React.js
+###React Router
+###Tailwind CSS
+###Open Library API
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
