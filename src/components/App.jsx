@@ -39,23 +39,23 @@ function App() {
 
   return (
     <div className="flex flex-col items-center min-h-screen bg-gray-100 p-4">
-      <div>
-        <h1 className="text-3xl font-bold mb-4 text-custom-green">Search by Book Name:</h1>
+      <h1 className="text-3xl font-bold mb-4 text-custom-green">Search by Book Name:</h1>
+      <div className="w-full max-w-md mb-4 md:flex md:justify-between md:items-center">
+        <input
+          type="text"
+          placeholder="Type book name"
+          className="w-full p-2 border border-gray-300 rounded mb-2 md:mb-0 md:mr-2"
+          value={query}
+          onChange={handleInputChange}
+        />
         <button
-          className="absolute top-5 right-20 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full"
+          className="lg:absolute top-5 right-20 md:flex bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full"
           onClick={() => navigate("/bookshelf")}
         >
           My Bookshelf
         </button>
       </div>
-      <input
-        type="text"
-        placeholder="Type book name"
-        className="w-full max-w-md p-2 border border-gray-300 rounded mb-4"
-        value={query}
-        onChange={handleInputChange}
-      />
-      <div className="flex flex-row flex-wrap mt-5">
+      <div className="flex flex-row flex-wrap mt-2 md:mt-5">
         {results.map((book, index) => {
           const isInBookshelf = bookshelf.some(b => b.key === book.key);
           return (
